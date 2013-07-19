@@ -80,7 +80,9 @@
                 <props>
                     <prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</prop>
                     <prop key="hibernate.show_sql">true</prop>
-                    <!-- change this to 'verify' before running as a production app -->
+                    <!-- possible value 
+                        validate | update | create | create-drop
+                      -->
                     <prop key="hibernate.hbm2ddl.auto">update</prop>
                 </props>
             </property>
