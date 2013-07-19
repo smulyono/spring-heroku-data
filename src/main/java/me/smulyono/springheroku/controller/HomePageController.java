@@ -5,7 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class HelloWorldController {
+public class HomePageController {
 	
 	@RequestMapping(value="/")
 	public String HelloWorld(Model model) {
