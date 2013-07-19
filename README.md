@@ -1,7 +1,7 @@
-spring-heroku
-=============
+spring-heroku with Spring Data - JPA
+========================================
 
-[![build status](https://travis-ci.org/smulyono/spring-heroku.png)](https://travis-ci.org/smulyono/spring-heroku.png)
+[![build status](https://travis-ci.org/smulyono/spring-heroku-data.png)](https://travis-ci.org/smulyono/spring-heroku-data.png)
 
 
-Base Template for using Spring MVC in Heroku. There are no additional Hibernate or Database connection on this template. 
+Code template to use Spring MVC and Spring Data using JPA -- with Heroku PostgreSQL
