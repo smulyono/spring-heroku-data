@@ -21,6 +21,8 @@
 	<!-- @Controller, @Service, @Configuration, etc. -->
 	<context:component-scan base-package="me.smulyono.springheroku" />
 
+    <jpa:repositories base-package="me.smulyono.springheroku.dao" />
+
 	<!-- Enables the Spring MVC @Controller programming model -->
 	<mvc:annotation-driven />
 
@@ -32,7 +34,6 @@
 		<property name="suffix" value=".jsp" />
 	</bean>
 	
-	<jpa:repositories base-package="me.smulyono.springheroku.dao"></jpa:repositories>
 	
     <tx:annotation-driven />
     <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
@@ -56,7 +57,7 @@
                 </props>
             </property>
         </bean>
-	</beans>
+ 	</beans>
 	
 	<beans profile="production">
 	<!-- only run this in production server (e.g Heroku)  -->

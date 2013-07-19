@@ -2,17 +2,16 @@ package me.smulyono.springheroku.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity
+@Entity(name="student")
 public class User implements java.io.Serializable {
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = -4974733123803118872L;
 	@Id
-	@GeneratedValue(strategy= GenerationType.AUTO)
+	@GeneratedValue
 	private Integer id;
 	
 	private String firstName;
